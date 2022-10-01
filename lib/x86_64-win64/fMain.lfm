@@ -1,0 +1,168 @@
+object Form1: TForm1
+  Left = 2548
+  Height = 298
+  Top = 342
+  Width = 562
+  Caption = 'Mamory Info'
+  ClientHeight = 298
+  ClientWidth = 562
+  LCLVersion = '2.2.2.0'
+  object Label1: TLabel
+    Left = 185
+    Height = 15
+    Top = 55
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 185
+    Height = 15
+    Top = 80
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 185
+    Height = 15
+    Top = 105
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 185
+    Height = 15
+    Top = 130
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 185
+    Height = 15
+    Top = 155
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 185
+    Height = 15
+    Top = 180
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 185
+    Height = 15
+    Top = 205
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 25
+    Height = 15
+    Top = 55
+    Width = 130
+    Caption = 'Загруженность памяти:'
+    ParentColor = False
+  end
+  object Label9: TLabel
+    Left = 25
+    Height = 15
+    Top = 80
+    Width = 104
+    Caption = 'Всего физической:'
+    ParentColor = False
+    OnClick = Label9Click
+  end
+  object Label10: TLabel
+    Left = 25
+    Height = 15
+    Top = 105
+    Width = 128
+    Caption = 'Свободно физической:'
+    ParentColor = False
+    OnClick = Label9Click
+  end
+  object Label11: TLabel
+    Left = 25
+    Height = 15
+    Top = 130
+    Width = 103
+    Caption = 'Всего страничной:'
+    ParentColor = False
+    OnClick = Label9Click
+  end
+  object Label12: TLabel
+    Left = 25
+    Height = 15
+    Top = 155
+    Width = 127
+    Caption = 'Свободно страничной:'
+    ParentColor = False
+    OnClick = Label9Click
+  end
+  object Label13: TLabel
+    Left = 25
+    Height = 15
+    Top = 180
+    Width = 64
+    Caption = 'Всего swap:'
+    ParentColor = False
+    OnClick = Label9Click
+  end
+  object Label14: TLabel
+    Left = 25
+    Height = 15
+    Top = 205
+    Width = 88
+    Caption = 'Свободно swap:'
+    ParentColor = False
+    OnClick = Label9Click
+  end
+  object ProgressBar1: TProgressBar
+    Left = 415
+    Height = 165
+    Top = 55
+    Width = 130
+    DragMode = dmAutomatic
+    TabOrder = 0
+  end
+  object SpinEdit1: TSpinEdit
+    Left = 185
+    Height = 23
+    Top = 257
+    Width = 50
+    MaxValue = 60
+    MinValue = 1
+    TabOrder = 1
+    Value = 1
+  end
+  object Label15: TLabel
+    Left = 25
+    Height = 15
+    Top = 265
+    Width = 116
+    Caption = 'Частота обновления:'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 335
+    Height = 25
+    Top = 255
+    Width = 210
+    Caption = 'Установить'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 515
+    Top = 10
+  end
+end
